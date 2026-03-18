@@ -1,0 +1,10 @@
+services:
+  war-thunder-live-searcher-helper-api:
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
+    volumes:
+      - ..:/workspace:cached
+    command: sleep infinity
+    ports:
+      - "3000:3000"

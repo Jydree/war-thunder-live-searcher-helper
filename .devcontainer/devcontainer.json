@@ -1,0 +1,25 @@
+{
+  "name": "NestJS",
+
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "war-thunder-live-searcher-helper-api",
+  "workspaceFolder": "/workspace",
+
+  "forwardPorts": [3000],
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "shd101wyy.markdown-preview-enhanced",
+        "yzhang.markdown-all-in-one",
+        "leonkohli.snapsource",
+        "mongodb.mongodb-vscode"
+      ]
+    }
+  },
+
+  "remoteUser": "vscode",
+
+  "postCreateCommand": "/usr/local/bin/postCreateCommand.sh"
+}
